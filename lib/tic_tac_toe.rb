@@ -1,3 +1,4 @@
+require 'pry'
 class TicTacToe
   attr_accessor :board
   WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2]]
@@ -53,7 +54,7 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.find {|combo| @board binding}
+    WIN_COMBINATIONS.find {|combo| binding.pry}
   end
   
 end
