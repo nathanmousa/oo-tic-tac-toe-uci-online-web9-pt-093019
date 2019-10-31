@@ -77,6 +77,14 @@ class TicTacToe
   end
   
   def play
+    turn until over?
     
+    if won?
+      puts("Congratulations #{winner}!")
+    else
+      puts("Draw!")
+    end
+    puts "Would you like to play again? (Y or N)"
+    gets.strip.downcase == "y" || gets.strip.downcase == "yes" ? play : puts("Goodbye!")
   end
 end
