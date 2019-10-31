@@ -60,7 +60,7 @@ class TicTacToe
   end
   
   def full?
-    @board
+    @board.none?
   end
   
 end
