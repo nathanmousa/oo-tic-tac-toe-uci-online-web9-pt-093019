@@ -38,6 +38,7 @@ class TicTacToe
 
     if valid_move?(input)
       move(input, turn_count)
+    end
   end
   
   def turn_count
