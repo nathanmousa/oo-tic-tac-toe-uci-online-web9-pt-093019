@@ -63,4 +63,8 @@ class TicTacToe
     @board.none? {|token| token == " "}
   end
   
+  def draw?
+    
+  end
+  
 end
