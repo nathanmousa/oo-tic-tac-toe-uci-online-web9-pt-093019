@@ -34,11 +34,18 @@ class TicTacToe
   def turn
     puts "Hey need input between 1-9"
     raw_input = gets.strip
-    input = input_to_index(raw_input) 
+    input = input_to_index(raw_input)
+
+    if valid_move?(input)
+      move(input, turn_count)
   end
   
   def turn_count
     @board.count {|token| token == "X" || token == "O"}
+  end
+  
+  def current_player
+    
   end
   
 end
