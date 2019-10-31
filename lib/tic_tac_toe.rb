@@ -53,7 +53,7 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.find {|combo| @board}
+    WIN_COMBINATIONS.find {|combo| @board binding}
   end
   
 end
