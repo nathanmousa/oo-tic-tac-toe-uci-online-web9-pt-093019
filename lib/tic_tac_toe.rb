@@ -60,7 +60,7 @@ class TicTacToe
   end
   
   def full?
-    @board.none? {|token| token == " "}
+    turn_count == 9
   end
   
   def draw?
