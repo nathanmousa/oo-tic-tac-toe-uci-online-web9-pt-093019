@@ -60,7 +60,7 @@ class TicTacToe
   end
   
   def full?
-    @board.none? {|token| token == ""}
+    @board.none? {|token| token == " "}
   end
   
 end
