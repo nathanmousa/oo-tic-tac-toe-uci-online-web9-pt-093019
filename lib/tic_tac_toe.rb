@@ -54,7 +54,9 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.find {|combo| binding.pry}
+    WIN_COMBINATIONS.find do |combo|
+      @board[combo[0]] == @board[combo[1]] == @board[combo[2]]
+    end
   end
   
 end
