@@ -52,4 +52,8 @@ class TicTacToe
     turn_count.odd? ? "O" : "X"
   end
   
+  def won?
+    
+  end
+  
 end
