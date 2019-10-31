@@ -32,7 +32,9 @@ class TicTacToe
   end
   
   def turn
-    
+    puts "Hey need input between 1-9"
+    raw_input = gets.strip
+    input = input_to_index(raw_input) 
   end
   
   def turn_count
